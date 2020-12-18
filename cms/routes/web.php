@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//se crea clase route get cuando se entre modulo ejemplo se ejecute el controlador ejemplo controller que se ejecute la funcion index
+//se llama el parametro id mediante el {} para realizar referencia a ese parametro
+//Route::get('/ejemplo/{id}','EjemploController@index');
+Route::resource('ejemplo','EjemploController');
